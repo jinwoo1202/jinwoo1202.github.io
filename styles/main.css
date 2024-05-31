@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+main #home {
+  text-align: center;
+}
+
+main #home h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+main #about {
+  text-align: center;
+}
+
+main #about img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+main #about ul {
+  text-align: left;
+  display: inline-block;
+  margin: auto;
+}
+
+.hobby-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.hobby-item {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 30%;
+}
+
+.hobby-item h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.hobby-item h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.hobby-item ul {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobby-item ul ul {
+  font-size: 0.9em;
+  margin-left: 20px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 10px;
+    margin-bottom: 70px;
+  }
+
+  .hobby-container {
+    flex-direction: column;
+  }
+
+  .hobby-item {
+    max-width: 100%;
+  }
+
+  .hobby-item h2 {
+    font-size: 1.2em;
+  }
+
+  .hobby-item h3 {
+    font-size: 1em;
+  }
+
+  .hobby-item ul {
+    font-size: 0.9em;
+  }
+}
